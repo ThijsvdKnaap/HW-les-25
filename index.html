@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery Huiswerk</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <link rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("#knop").click(function() {
+        var naam = $("#idTekstveld").val();
+        var naam1 = $("#idTekstveld1").val();
+        var naam2 = $("#idTekstveld2").val();
+        window.alert("Dag " + naam + " uit " + naam1 + ". U bent " + naam2 + " jaar oud.");
+        });
+        });
+    </script>  
+</head>
+<body>
+    <h1>Vul hier je gegevens in!</h1>
+    <form>
+        Wat is uw naam?
+        <input type="text" id="idTekstveld"><br>
+        Waar kom je vandaan?
+        <input type="text" id="idTekstveld1"><br>
+        Hoe oud bent u?
+        <input type="text" id="idTekstveld2"><br>
+        <input id="knop" name="knop" type="button"
+        value="Klik op deze knop">
+        </form>
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+</body>
+</html>
